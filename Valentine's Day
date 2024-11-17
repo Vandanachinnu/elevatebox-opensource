@@ -1,0 +1,9 @@
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+  int X, Y;
+  scanf("%d %d", &X, &Y);
+  int chocolates = X / Y;
+  printf("%d\n", chocolates);
+    return 0;
+}
