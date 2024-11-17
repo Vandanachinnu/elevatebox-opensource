@@ -1,0 +1,9 @@
+import math
+
+X, N = map(int, input().split())
+
+total_planes_needed = math.ceil(N / 100)
+
+additional_planes = max(0, total_planes_needed - X)
+
+print(additional_planes)
