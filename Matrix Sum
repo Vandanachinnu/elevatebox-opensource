@@ -1,0 +1,14 @@
+def compute_matrix_sums(N, matrix):
+  row_sums = [sum(row) for row in matrix]
+  col_sums = [sum(matrix[i][j] for i in range(N)) for j in range(N)]
+  
+  result = []
+  for i in range(N):
+    result.append(row_sums[i] + col_sums[i])
+  return result
+
+N = int(input())
+matrix = [list(map(int, input().split())) for _ in range(N)]
+
+result = compute_matrix_sums(N, matrix)
+print(" ".join(map(str, result)))
