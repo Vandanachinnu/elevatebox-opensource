@@ -17,4 +17,4 @@ def max_consecutive_absent_days(N, attendance):
 N = int(input())  
 attendance = list(map(int, input().split()))
 
-print(max_consecutive_absent_days(N, attendance
+print(max_consecutive_absent_days(N, attendance))
