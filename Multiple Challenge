@@ -1,0 +1,13 @@
+def count_divisible_by(x, N):
+  
+  return N // x
+def count_multiples(N):
+  
+  count_3 = count_divisible_by(3, N)
+  count_5 = count_divisible_by(5, N)
+  count_15 = count_divisible_by(15, N)
+  
+  return count_3 + count_5 - count_15
+N = int(input())
+
+print(count_multiples(N))
